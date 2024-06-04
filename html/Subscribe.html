@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Page | Asphalt 9 : Rejends</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <header>
+        <nav class="Navbar">
+            <img src="Asset Website/Asphalt_9_legend.png" alt="Logo" class="Logo">
+            <a href="Home.html">Home</a>
+            <a href="News.html">News</a>
+            <a href="Product.html">Product</a>
+            <a href="Subscribe.html"class="active">Subscribe</a>
+            <a href="Event.html">Events</a>
+        </nav>
+    </header>
+    <img id="bg" src="Asset Website/Background/Subscription Page/Subscription1.webp" alt="Background">
+    <div class="Subscribe">
+        <h2 id="Sub1">Wanna be a creator?</h2>
+        <h2 id="Sub2">Register Now</h2>
+        <form class="SubForm">
+            <label for="firstName">First Name :</label>
+            <input type="text" id="firstName" name="firstName"><br>
+
+            <label for="lastName">Last Name :</label>
+            <input type="text" id="lastName" name="lastName"><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="dob">Date of Birth :</label>
+            <input type="date" id="dob" name="dob"><br>
+
+            <label for="gender">Gender :</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms" id="termstxt">I agree to the Gamefolt terms and conditions and I have read the Privacy Policy.</label><br>
+
+            <button id="Submit" onclick="return validateSub()">Submit</button>
+        </form>
+        <h2 id="done">Thank you for Joining Us</h2>
+    <script src="javascript/Home.js"></script>
+</body>
+</html>

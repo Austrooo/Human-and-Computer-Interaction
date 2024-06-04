@@ -1,0 +1,846 @@
+/* ANIMATION or TRANSITION */
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* UNIVERSAL */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(29,29,29);
+}
+
+/* FOOTER */
+
+.bottom-left-footer{
+    padding-top: 20px;
+}
+
+.bottom-left-footer span{
+    bottom: 0;
+    right: 0;
+    padding-left: 10px;
+    margin-right: 1px;
+    font-size: 10px;
+}
+
+.terms span{
+    font-size: 20px;
+    padding-left: 30px;
+    margin-right: 30px
+}
+
+.bottom-right-footer{
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+}
+
+footer{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: auto;
+    position: relative;
+}
+
+/* HEADER */
+
+.Navbar{
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.Logo{
+    width : 50px;
+}
+
+.Navbar a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.Navbar a:hover{
+    color: red
+}
+
+.Navbar .active{
+    color: red;
+}
+
+/* HOME PAGE */
+
+.BG_Home_0{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    filter: brightness(50%);
+}
+
+.BG_Home_1{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    filter: brightness(20%);
+}
+
+.Title{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    animation: fadeIn 4s;
+}
+
+.Title .part1{
+    color: white;
+}
+
+.Title .part2{
+    color: red;
+}
+
+.GameDesc{
+    position: absolute;
+    top: 140%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 30px;
+    color: white;
+    text-align: justify;
+    z-index: 2;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+}
+
+/* PRODUCT PAGE */
+
+.Selection{
+    position: absolute;
+    top: 13%;
+    margin-left: 5%;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    z-index: 2;
+}
+
+.Selection span{
+    margin-right: 15px;
+}
+
+#S, #A, #B, #C, #D{
+    cursor: pointer;
+}
+
+.image-grid{
+    position: relative;
+    padding-top: 205px;
+    padding-bottom: 100px;
+}
+
+.image-grid img {
+    width: 100%;
+}
+
+.text-grid{
+    position: absolute;
+    width: 78%;
+    top: 63%;
+    left: 1%;
+    color: white;
+    font-size: 20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.textA, .textB, .textC, .textD{
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 380px;
+    padding: 20px;
+    grid-template-areas: 
+    ". ."
+    ". .";
+}
+
+.textS{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 380px;
+    padding: 20px;
+    grid-template-areas: 
+    ". ."
+    ". .";
+}
+
+.classA, .classB, .classC, .classD{
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+    grid-template-areas: 
+    ". ."
+    ". .";
+}
+
+.classS{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+    grid-template-areas: 
+    ". ."
+    ". .";
+}
+
+/* SUBSCRIPTION */
+
+#bg{
+    width: 100%;
+    filter: brightness(50%);
+    position: absolute;
+}
+
+.Subscribe{
+    position: relative;
+    height: 100vh;
+    text-align: left;
+}
+
+.Subscribe h2{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    z-index: 10;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#Sub1, #Sub2, #done {
+    position: absolute;
+    top: 450px;
+    left: 800px;
+    transform: translate(-50%, -50%);
+}
+
+#Sub1, #Sub2{
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+#Sub1 {
+    visibility: visible;
+    animation-delay: 0s;
+}
+
+#Sub2 {
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+#done{
+    visibility: hidden;
+}
+
+.SubForm {
+    display: block;
+    background-color: rgba(183, 181, 181, 0.747);
+    visibility: hidden;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 4s;
+
+    position: absolute;
+    width: 60%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    top: 450px;
+    left: 830px;
+}
+
+.SubForm label{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.SubForm input{
+    padding-top: 10px;
+    font-size: 20px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(0, 0, 0) solid 2px;
+    outline: none;
+}
+
+#firstName ,#lastName{
+    width: 65%;
+}
+
+#email{
+    width: 77%;
+}
+
+#male, #female{
+    margin-left: 100px;
+}
+
+#terms{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#termstxt{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.SubForm button{
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px 100px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 2px solid;
+    cursor: pointer;
+    margin-left: 35%;
+}
+
+.SubForm button:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+/* EVENT */
+
+#bg_video {
+    width: 100%;
+}
+
+#bg_event{
+    width: 100%;
+    filter: brightness(50%);
+    position: absolute;
+    padding: 0;
+}
+
+.event_content{
+    z-index: 2;
+    position: relative;
+    padding: 0;
+}
+
+.event_content h1{
+    position: absolute;
+    font-size: 80px;
+    padding-top: 50px;
+    left: 23%;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.event_content h1 span{
+    color: red;
+}
+
+.Close, .Open{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 70px;
+    padding: 20px;
+    grid-template-areas: 
+    ". . . ."
+    ". . . .";
+    
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 550px;
+    left: 50%;
+}
+
+.Open{
+    visibility: hidden;
+}
+
+.event_content h2{
+    position: absolute;
+    font-size: 80px;
+    padding-top: 30%;
+    left: 35%;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.Sponsor{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 690px;
+    left: 20%;
+}
+
+#Sponsor1, #Sponsor2{
+    filter: invert(1) brightness(1);
+}
+
+#Sponsor1, #Sponsor2, #Sponsor3, #Sponsor4{
+    width: 200px;
+    height: auto;
+    margin: 20px;
+}
+
+/* NEWS */
+
+#line1, #line2, #line3{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    width: 100%;
+}
+
+#line1{
+    top: 9.5%;
+}
+
+#line2{
+    top: 65.5%;
+}
+
+#line3{
+    top: 121%;
+}
+
+.news1, .news2, .news3{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+}
+
+.news1{
+    top: 100px;
+    align-items: start;
+}
+
+.news2{
+    top: 600px;
+    align-items: end;
+}
+
+.news3{
+    top: 1104px;
+    align-items: start;
+}
+
+.text-container{
+    margin-left: 10px;
+}
+
+#news-image1, #news-image2, #news-image3{
+    width: 500px;
+}
+
+.news-title{
+    color: white;
+    font-size: 60px;
+}
+
+.news-desc{
+    color: white;
+    font-size: 30px;
+}
+
+.news-desc span{
+    color: white;
+    font-weight: bold;
+}
+
+.time_button{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.time_button button{
+    margin-left: 800px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: rgb(255, 255, 255) 2px solid;
+    cursor: pointer;
+}
+
+.time_button button:hover{
+    background-color: rgb(194, 194, 194);
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 2px solid;
+}
+
+/* RESIZING */
+@media screen and (max-width:768px) {
+
+    /* HEADER */
+
+    .Navbar{
+        justify-content:flex-start;
+    }
+
+    .Navbar a{
+        font-size: 20px;
+        margin-left: 60px;
+    }
+    
+
+    .Logo{
+        width: 20px;
+    }
+
+    /* FOOTER */
+    
+    .bottom-left-footer span{
+        font-size: 5px;
+    }
+
+    .bottom-left-footer{
+        padding-top: 5px;
+    }
+    
+    .terms span{
+        font-size: 10px;
+        padding-left: 10px;
+        margin-right: 10px
+    }
+    
+    .bottom-right-footer{
+        font-size: 30px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 50px;
+        padding-bottom: 15px;
+    }
+
+    /* HOME PAGE */
+    
+    .Title{
+        position: absolute;
+        top: 180px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        z-index: 2;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        animation: fadeIn 4s;
+    }
+    
+    .GameDesc{
+        position: absolute;
+        top: 550px;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 15px;
+        color: white;
+        text-align: justify;
+        z-index: 2;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    
+    }
+
+    /* PRODUCT PAGE */
+
+    .Selection{
+        position: absolute;
+        top: 70px;
+        margin-left: 5%;
+        color: white;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        z-index: 2;
+        font-size: 25px;
+    }
+    
+    .Selection span{
+        margin-right: 15px;
+    }
+
+    .image-grid{
+        padding-top: 130px;
+        padding-bottom: 20px;
+    }
+
+    .text-grid{
+        width: 105%;
+        top: 300px;
+        left: 1%;
+        color: white;
+        font-size: 10px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+    
+    .textA{
+        grid-gap: 170px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .textB{
+        grid-gap: 170px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .textC{
+        grid-gap: 170px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .textD{
+        grid-gap: 170px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .textS{
+        grid-gap: 170px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* SUBSCRIPTION */
+    
+    #Sub1, #Sub2, #done {
+        top: 200px;
+        left: 350px;
+        font-size: 30px;
+    }
+
+    #firstName ,#lastName{
+        width: 50%;
+    }
+    
+    #email{
+        width: 66%;
+    }
+    
+    #dob{
+        margin-bottom: 10px;
+    }
+
+    #male, #female{
+        margin-left: 30px;
+    }
+    
+    #terms{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    
+    #termstxt{
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .SubForm {
+        width: 500px;
+        padding: 20px;
+        transform: translate(-50%, -50%);
+        top: 240px;
+        left: 350px;
+    }
+
+    .SubForm label{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .SubForm input{
+        font-size: 15px;
+        margin: 0;
+        
+    }
+
+    .SubForm button{
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 10px 30px;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        border: rgb(0, 0, 0) 2px solid;
+        cursor: pointer;
+        margin-left: 180px;
+    }
+    
+    .SubForm button:hover{
+        background-color: rgb(194, 194, 194);
+    }
+
+    /* EVENT */
+
+    #bg_video {
+        width: 146.5%;
+    }
+    
+    #bg_event{
+        width: 146.5%;
+    }
+    
+    .event_content h1{ 
+        width: 80%;
+        position: absolute;
+        font-size: 50px;
+        left: 320px;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    
+    .Close, .Open{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 70px;
+        padding: 20px;
+        grid-template-areas: 
+        ". . . ."
+        ". . . .";
+        
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 380px;
+        left: 73%;
+    }
+
+    .event-grid img{
+        width: 200px;
+    }
+    
+    .event_content h2{
+        position: absolute;
+        font-size: 40px;
+        padding-top: 370px;
+        left: 430px;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    
+    .Sponsor{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 470px;
+        left: 200px;
+    }
+    
+    #Sponsor1, #Sponsor2{
+        filter: invert(1) brightness(1);
+    }
+    
+    #Sponsor1, #Sponsor2, #Sponsor3, #Sponsor4{
+        width: 140px;
+        height: auto;
+    }
+
+    /* NEWS */
+    
+    #line1{
+        top: 6.5%;
+    }
+    
+    #line2{
+        top: 45.5%;
+    }
+    
+    #line3{
+        top: 85%;
+    }
+    
+    .news1{
+        top: 52px;
+        align-items: start;
+    }
+    
+    .news2{
+        top: 303px;
+        align-items: end;
+    }
+    
+    .news3{
+        top: 558px;
+        align-items: start;
+    }
+    
+    .text-container{
+        margin-left: 10px;
+    }
+    
+    #news-image1, #news-image2, #news-image3{
+        width: 250px;
+    }
+    
+    .news-title{
+        color: white;
+        font-size: 30px;
+    }
+    
+    .news-desc{
+        color: white;
+        font-size: 13px;
+    }
+    
+    .time_button{
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .time_button h1{
+        font-size: 20px;
+    }
+    
+    .time_button button{
+        margin-left: 300px;
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
